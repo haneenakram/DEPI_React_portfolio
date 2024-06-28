@@ -5,6 +5,9 @@ html {
     padding: 0;
     height: 100%;
 }
+h1 {
+    text-align: center
+}
 nav {
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
@@ -107,7 +110,7 @@ position: absolute;
     padding-left: 10px;
     
 }
-.cv , .hire{
+.cv , .hire, .send{
     background-color: rgb(26, 84, 241);
     border-radius: 10%;
     margin-right: 20px;
@@ -125,7 +128,7 @@ position: absolute;
     display: flex;
     flex-direction: column;
     padding: 0%;
-    margin: 0%;
+    margin: 10px;
     color: rgb(26, 84, 241);
 }
 
@@ -133,20 +136,55 @@ position: absolute;
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
-.services-container :hover{
+.services-container :hover {
 background-color: white;
 }
-.services-container .content2-1 .fa :hover{
+.services-container:hover .content2-1:hover i,
+.services-container:hover .content2-2:hover i,
+.services-container:hover .content2-3:hover i,
+.services-container:hover .content2-4:hover i
+{
 color: rgb(26, 84, 241);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+transform: scale(1.2);
+}
+.our-blog{
+    background-color:#c2bdbd;
+}
+.blog
+{
+    display: flex;
+    justify-content: space-around;
 }
 
+/*---------------------------------------------------------------------------------------------------------------------------*/
+.contact-us,.our-blog{
+    padding: 20px;
+}
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
 .footer{
     background-color: rgb(51, 50, 50);
     text-align: center;
     padding: 20px;
+}
+.footer .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5em;
+}
+.footer .contact i{
+        color: #888585;
+}
+.footer .contact i:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+    transition-timing-function: ease-in-out;
+    color: rgb(26, 84, 241);
 }
 .footer p{
     display: block;
@@ -156,12 +194,4 @@ color: rgb(26, 84, 241);
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-}
-.footer a:hover{
-    color: rgb(26, 84, 241);
-}
-.contact {
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
 }
