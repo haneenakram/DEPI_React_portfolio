@@ -8,6 +8,15 @@ html {
 h1 {
     text-align: center
 }
+.navcontainer{
+    display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+}
+.navcontainer .navbar-brand{
+    color: rgb(26, 84, 241);
+}
 nav {
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
@@ -90,14 +99,14 @@ position: absolute;
 .profile-container {
     border: 3px solid black;
     border-radius: 25px;
-    width: 150px;
-    height: 180px;
+    width:200px;
+    height: 250px;
     position: relative;
 }
 .profile-container  img{
     border-radius: 25px;
-    width: 150px;
-    height: 180px;;
+    width: 200px;
+    height: 250px;
     position: absolute;
     left: 10px;
     top: 10px;
@@ -133,24 +142,53 @@ position: absolute;
 }
 
 .services-container{
-    padding: 20px;
     display: flex;
+    padding: 1px;
     justify-content: space-between;
-    gap: 10px;
 }
-.services-container :hover {
+.services-container .content2-1:hover ,
+.services-container .content2-2:hover ,
+.services-container .content2-3:hover ,
+.services-container .content2-4:hover {
 background-color: white;
 }
-.services-container:hover .content2-1:hover i,
-.services-container:hover .content2-2:hover i,
-.services-container:hover .content2-3:hover i,
-.services-container:hover .content2-4:hover i
+.services-container .content2-1:hover i,
+.services-container .content2-2:hover i,
+.services-container .content2-3:hover i,
+.services-container .content2-4:hover i
 {
 color: rgb(26, 84, 241);
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 transform: scale(1.2);
 }
+.icons{
+    background-color: #c2bdbd;
+}
+
+/*------------------------------------------------------------------------------ */
+.feedback-content{
+    gap: 50px;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#c2bdbd;
+    padding: 50px;
+}
+
+.feedback-content img {
+    border-radius: 50%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+/*------------------------------------------------------------------------------*/
 .our-blog{
     background-color:#c2bdbd;
 }
